@@ -13,6 +13,9 @@ inputs:
     custom-field-name:
         description: "Custom field to synchronize with github PR status"
         required: true
+branding:
+    icon: "check-circle"
+    color: "red"
 runs:
     using: "node12"
     main: "dist/index.js"
