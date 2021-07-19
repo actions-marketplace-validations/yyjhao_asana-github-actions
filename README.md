@@ -53,7 +53,7 @@ The action will attempt to set the custom field according to the pull request ac
 uses: yyjhao/asana-github-actions@v1.0.0
 with:
     asana-access-token: "<your access token>"
-    task-comment: "Pull requests opened: "
+    task-comment: "Pull request opened: "
     project-id: "<some project id>"
     custom-field-name: "PR status"
 ```
@@ -81,7 +81,7 @@ jobs:
               uses: yyjhao/asana-github-actions@v1.0.0
               with:
                   asana-access-token: "<your access token>"
-                  task-comment: "Pull requests opened: "
+                  task-comment: "Pull request opened: "
                   project-id: "<some project id>"
                   custom-field-name: "PR status"
 ```
