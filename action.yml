@@ -1,0 +1,18 @@
+name: "Simple Asana Github Actions"
+description: "Simple Asana Github Actions"
+inputs:
+    asana-access-token:
+        description: "Asana Personal Access Token."
+        required: true
+    task-comment:
+        description: "Text for adding comments to a task. The comment will appear as {{task-comment}} {{github url}}"
+        required: true
+    project-id:
+        description: "ID of project to multi-home task to"
+        required: true
+    custom-field-name:
+        description: "Custom field to synchronize with github PR status"
+        required: true
+runs:
+    using: "node12"
+    main: "dist/index.js"
